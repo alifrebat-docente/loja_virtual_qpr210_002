@@ -13,8 +13,10 @@
 :root{
     --cor_principal: #eec71b;
     --cor_botao01: #049d09;
-    --cor_lnk_menu: #ffffff;
+    --cor_lnk_menu: #020100;
     --cor_vermelha: #b60000;
+    --cor_suave: #c0ecee;
+    --cor_branca: #ffffff;
 }
 
 /*CONFIGURANDO A TAG main*/
@@ -31,11 +33,11 @@
 #cabecalho{
     width: 100%;
     height: 200px;
-    background-color: var(--cor_principal);
-    padding: 5px;
+    background-color: var(--cor_suave);
+    padding: 5px 100px;
     margin: 20px 0px;
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
 }
 
@@ -69,28 +71,28 @@
 
 /*FORMATANDO OS MENUS*/
 #menu a:link{
-    font-size: 1.3em;
+    font-size: 2.3em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--cor_lnk_menu);
 }
 
 #menu a:visited{
-    font-size: 1.3em;
+    font-size: 2.4em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--cor_lnk_menu);
 }
 
 #menu a:hover{
-    font-size: 1.6em;
+    font-size: 2.4em;
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--cor_botao01);
+    color: var(--cor_principal);
 }
 
 #menu a:active{
-    font-size: 1.3em;
+    font-size: 2.4em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--cor_vermelha);
@@ -98,8 +100,8 @@
 
 /*FORMATANDO section PELO ID PESQUISA */
 #pesquisa{
-    background-color: #049d09;
-    width: 1000px;
+    background-color: var(--cor_principal);
+    width: 100%;
     height: 180px;
     display: flex;
     align-items: center;
@@ -112,8 +114,87 @@
     padding: 20px;
     border-radius: 8px;
     font-size: 2em;
+    background-color: var(--cor_branca);
 }
 
+/*FORMATAÇÃO DOS CARDS*/
+#cards{
+    width: 1000px;
+    min-height: 600px;
+    margin: 20px 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    cursor: pointer;
+}
 
+.card{
+    width: 250px;
+    min-height: 250px;
+    border: solid 2px var(--cor_principal);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+}
+
+.card h3{
+    margin: 20px 0px;    
+}
+
+.card button{
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    background-color: var(--cor_suave);
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 150px;
+}
+
+/*FORMATAÇÃO DO RODAPÉ*/
+#rodape{
+    width: 100%;
+    height: 300px;
+    background-color: var(--cor_suave);
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+#dadosloja{
+    font-size: 0.8em;
+}
+
+#icones-sociais ul {
+    list-style: none;
+}
+
+#icones-sociais img{
+    width: 25px;
+    height: 25px;
+    margin-left: 50px;
+}
+
+#div-cartoes img{
+    width: 25px;
+    height: 25px;
+}
 
