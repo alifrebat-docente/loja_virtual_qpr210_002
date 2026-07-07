@@ -203,11 +203,12 @@
 /*CONFIGURANDO O MENU SEÇÕES*/
 #nav-secoes{
     width: 100%;
-    height: 80px;
+    min-height: 80px;
     margin: 20px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .lnk-secao:link, .lnk-secao:visited{
