@@ -2,15 +2,15 @@ const produtos = [
   {
     id_produto: 1,
     descricao_produto: "Arroz Tipo 1 5kg",
-    caminho_da_imagem: "../imagens/produtos/arroz-5kg.jpg",
+    caminho_da_imagem: "../imagens/arroz_branco.jpg",
     valor_unitario: 29.90,
     id_secao: 1,
     nome_secao: "Mercearia"
   },
   {
     id_produto: 2,
-    descricao_produto: "Feijão Carioca 1kg",
-    caminho_da_imagem: "../imagens/produtos/feijao-carioca-1kg.jpg",
+    descricao_produto: "Feijão Preto 1kg",
+    caminho_da_imagem: "../imagens/feijao_preto.jpg",
     valor_unitario: 8.49,
     id_secao: 1,
     nome_secao: "Mercearia"
@@ -50,7 +50,7 @@ const produtos = [
   {
     id_produto: 7,
     descricao_produto: "Queijo Mussarela 500g",
-    caminho_da_imagem: "../imagens/produtos/mussarela-500g.jpg",
+    caminho_da_imagem: "../imagens/queijo_meia_cura.jpg",
     valor_unitario: 24.90,
     id_secao: 2,
     nome_secao: "Laticínios"
@@ -58,7 +58,7 @@ const produtos = [
   {
     id_produto: 8,
     descricao_produto: "Manteiga com Sal 200g",
-    caminho_da_imagem: "../imagens/produtos/manteiga-200g.jpg",
+    caminho_da_imagem: "../imagens/manteiga.jpg",
     valor_unitario: 11.90,
     id_secao: 2,
     nome_secao: "Laticínios"
@@ -193,8 +193,8 @@ const produtos = [
   },
   {
     id_produto: 25,
-    descricao_produto: "Balas Sortidas 100g",
-    caminho_da_imagem: "../imagens/produtos/balas-sortidas-100g.jpg",
+    descricao_produto: "Cesto Sortido",
+    caminho_da_imagem: "../imagens/cesto01.jpg",
     valor_unitario: 4.99,
     id_secao: 6,
     nome_secao: "Bomboniere"
