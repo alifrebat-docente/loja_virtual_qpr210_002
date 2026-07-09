@@ -5,14 +5,15 @@ import { produtos } from "./produtos.js";
 const section_cards = document.querySelector('#cards')
 
 //CARREGA 
-const carregaProduto = (op) => {
-
-    if (op === 0) {
+const carregaProduto = (id_secao) => {
+    //AO CHAMAR A FUNÇÃO carregaProduto() DEVE PASSAR O PARÂMETRO. 0(ZERO) CHAMA A FUNÇÃO listarProdutos(), QUALQUER OUTRO VALOR CHAMA A FUNLÇAO produtosFiltrados(id_secao)
+    if (id_secao === 0) {
         montandoCards(listarProdutos())
     } else {
-        montandoCards(produtosFiltrados(op))
+        montandoCards(produtosFiltrados(id_secao))
     }
 
+    //QUALQUER FUNÇÃO CHAMADA SEMPRE CHAMA A FUNÇÃO montarSecoes()
     montarSecoes()
 }
 
@@ -37,7 +38,6 @@ const listarSecoes = () => {
 
     //RETORNADO O ARRAY CONVERTIDO
     return secoesMenu
-
 }
 
 //MONTANDO OS LINKS SEÇÕES
