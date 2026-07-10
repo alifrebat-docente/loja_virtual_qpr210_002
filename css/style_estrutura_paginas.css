@@ -56,8 +56,6 @@
     justify-content: center;
 }
 
-
-
 /*CONFIGURANDO OS LI DO UL DO CABEÇALHO NA HORIZONTAL*/
 #cabecalho ul, #menu-secoes {
     display: flex;
@@ -111,12 +109,20 @@
 }
 
 #pesquisa input{
-    width: 600px;
+    width: 1000px;
     height: 80px;
     padding: 20px;
     border-radius: 8px;
     font-size: 2em;
     background-color: var(--cor_branca);
+    border: none;
+}
+
+#pesquisa input::placeholder{
+    font-style: italic;
+    font-size: 1.4em;
+    color: var(--cor_vermelha);
+    text-align: center;
 }
 
 /*FORMATAÇÃO DOS CARDS*/
