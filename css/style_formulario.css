@@ -59,3 +59,7 @@ label{
     display: none;
 }
 
+input:disabled{
+    background-color: var(--cor_principal);
+
+}
